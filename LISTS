@@ -1,6 +1,14 @@
 #Lists are basically the data structures and multiple values can be stored in a list
-#for example, lets create list called fruits
-
+#for example, lets create list called fruits with 5 elements
 fruits = ["Mango", "Papaya", "Kiwi", "Orange", "Banana" ]
 
-#now fruits have 5 elements
+#print first element from the list
+print(fruits[0]) #answer: Mango
+
+#print last element from the list
+print(fruits[-1]) #answer: Banana
+
+#To calculate the length(total values in a list) we can use len function
+len(fruits) #answer will be 5
+
+

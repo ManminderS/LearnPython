@@ -2,6 +2,10 @@
 #for example, lets create list called fruits with 5 elements
 fruits = ["Mango", "Papaya", "Kiwi", "Orange", "Banana" ]
 
+#In Python, lists are zero-indexed, meaning the first element is at index 0. The offset is essentially the index you use to reference elements in the list.
+#An offset is commonly used to access or manipulate data at a certain distance from the beginning (or any reference point) of the structure. 
+#For example, an offset of 5 means accessing or operating on the element 5 positions away from the starting point.
+
 #print first element from the list
 print(fruits[0]) #answer: Mango
 
@@ -10,5 +14,6 @@ print(fruits[-1]) #answer: Banana
 
 #To calculate the length(total values in a list) we can use len function
 len(fruits) #answer will be 5
+
 
 

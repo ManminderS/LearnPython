@@ -21,8 +21,12 @@ print(fruits[-2]) #answer: Orange
 #To calculate the length(total values in a list) we can use len function
 len(fruits) #answer will be 5
 
-#Previous line of code gives you the length of the list, but if you do
-print(fruits[5]) #this will result into error as 
+#Previous line of code gives you the length of the list, but if try to print out last element of the list using the below code thinking that the 
+#last element sits on the last place which is 5 and write the code below:
+print(fruits[5]) #this will result into an IndexError: List index out of range
 
 
+#Appending Items to the list
+if x:
+    
 

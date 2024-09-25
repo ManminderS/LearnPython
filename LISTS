@@ -30,8 +30,11 @@ print(fruits[5-1]) #answer: Banana
 #Appending Items to the list: Adding items to the lists
 #General syntax
 listname.append[item] #this will add the item to the end of the list 
-#examples:
 fruits.append["Cherry"] #As a result Now list fruits looks like fruit = ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry"]
+
+#appending an extended list to fruits
+fruits.extend(["Watermelon", "Pear"]) #As a result Now list fruits looks like fruit = ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry", "Watermelon", "Pear"]
+
 
     
 

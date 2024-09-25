@@ -9,11 +9,20 @@ fruits = ["Mango", "Papaya", "Kiwi", "Orange", "Banana" ]
 #print first element from the list
 print(fruits[0]) #answer: Mango
 
+#print second element from the list
+print(fruits[1]) #answer: Papaya
+
 #print last element from the list
 print(fruits[-1]) #answer: Banana
 
+#print second last element from the list and so on
+print(fruits[-2]) #answer: Orange
+
 #To calculate the length(total values in a list) we can use len function
 len(fruits) #answer will be 5
+
+#Previous line of code gives you the length of the list, but if you do
+print(fruits[5]) #this will result into error as 
 
 
 

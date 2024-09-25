@@ -24,9 +24,14 @@ len(fruits) #answer will be 5
 #Previous line of code gives you the length of the list, but if try to print out last element of the list using the below code thinking that the 
 #last element sits on the last place which is 5 and write the code below:
 print(fruits[5]) #this will result into an IndexError: List index out of range
+#to set the offset correct from the index 0 when we have 5 elements in the the list we can also do:
+print(fruits[5-1]) #answer: Banana
 
+#Appending Items to the list: Adding items to the lists
+#General syntax
+listname.append[item] #this will add the item to the end of the list 
+#examples:
+fruits.append["Cherry"] #As a result Now list fruits looks like fruit = ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry"]
 
-#Appending Items to the list
-if x:
     
 

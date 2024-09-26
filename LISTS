@@ -33,7 +33,10 @@ listname.append[item] #this will add the item to the end of the list
 fruits.append["Cherry"] #As a result Now list fruits looks like fruit = ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry"]
 
 #appending an extended list to fruits
-fruits.extend(["Watermelon", "Pear"]) #As a result Now list fruits looks like fruit = ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry", "Watermelon", "Pear"]
+fruits.extend(["Watermelon", "Pear"]) 
+
+#print the entire list after the last code
+print(fruits) #As a result Now:  ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry", "Watermelon", "Pear"]
 
 
     

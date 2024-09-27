@@ -1,5 +1,7 @@
-#Lists are the data structures and multiple values can be stored in a list
-#for example, let's create list called fruits with 5 elements
+#official documentation: https://docs.python.org/3/tutorial/datastructures.html
+
+#Lists are data structures and multiple values can be stored in a list
+#for example, let's create a list called fruits with 5 elements
 fruits = ["Mango", "Papaya", "Kiwi", "Orange", "Banana" ]
 
 #In Python, lists are zero-indexed, meaning the first element is at index 0. The offset is essentially the index you use to reference elements in the list.

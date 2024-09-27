@@ -40,5 +40,6 @@ fruits.extend(["Watermelon", "Pear"])
 #print the entire list after the last code
 print(fruits) #As a result Now:  ["Mango", "Papaya", "Kiwi", "Orange", "Banana", "Cherry", "Watermelon", "Pear"]
 
-
+#Randomly print an element from list fruits
+random.choice(fruits)
     

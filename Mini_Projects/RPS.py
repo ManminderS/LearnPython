@@ -45,9 +45,9 @@ else:
 #Logic to play the game
 if human_choice == "0" and comp_choose == "Scissors":
     print("You Won!")
-elif human_choice == "1" and comp_choose == "paper":
+elif human_choice == "1" and comp_choose == "rock":
     print("You Won!")
-elif human_choice == "2" and comp_choose == "rock":
+elif human_choice == "2" and comp_choose == "paper":
     print("You Won!")
 else:
     print("You Lost!")

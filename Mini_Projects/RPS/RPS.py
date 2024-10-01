@@ -49,6 +49,8 @@ elif human_choice == "1" and comp_choose == "rock":
     print("You Won!")
 elif human_choice == "2" and comp_choose == "paper":
     print("You Won!")
+elif human_choice == rock and comp_choose == "rock":
+    print("Its a tie")
 else:
     print("You Lost!")
 

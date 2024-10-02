@@ -1,3 +1,4 @@
+#import mandatory modules
 import art
 
 #print on the screen

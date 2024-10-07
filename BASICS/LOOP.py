@@ -19,6 +19,7 @@ for fruit in fruits:
   print(fruit)  #part of for loop
 print(fruits)   #not a part of the loop as there is no indentation in front of it.
 
+
 --------------------------------------------------------------------------------------------------------------------
 #example 2: consider a list of scores
 student_scores = [150, 142, 185, 120, 171, 184, 149, 24, 59, 68, 199, 78, 65, 89, 86, 55, 91, 64, 89]
@@ -47,6 +48,7 @@ for score in student_scores:
         max_num = score
 print(max_num)
 
+
 ---------------------------------------------------------------------------------------------------------------------------
 #LEARNING 2: Using range function with For-Loop
 #Syntax : for i in range(a,b)    #i: particular elements #a: starting range and b: ending range, a =< num < b
@@ -68,5 +70,35 @@ for num in range(1,11):
 9
 10
 
---------------------------------------------------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Coding Exercise: Print 1-100 on screen, any number divisible by 3 should print "FIZZ", any number divisible by 5 should print "BUZZ", and number divisible by both 3 and 5 should print as "BuzzFizz"
+#using for loop with range function to define the range as 1-100
+for num in range(1,101):
+    if num % 3 == 0 and num % 5 == 0:
+        num = "FIZZBUZZ"
+    elif num % 5 == 0:
+        num = "BUZZ"
+    elif num % 3 == 0:
+        num = "FIZZ"
+    print(num)
+
+#Result:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+...etc
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

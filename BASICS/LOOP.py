@@ -83,7 +83,7 @@ for num in range(1,101):
         num = "FIZZ"
     print(num)
 
----or--- Alternative Solution
+---or--- Alternative Solution-------------------------------
 # Create a loop with For and Range to go from 1 to 100.
 for number in range(1, 101):
   # First check if the number is divisible by both 3 and 5.
@@ -102,7 +102,7 @@ for number in range(1, 101):
   else:
     print(number)
 
-#Result:
+#Result:-----------------------------
 1
 2
 Fizz

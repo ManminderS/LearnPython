@@ -6,7 +6,7 @@ print("Welcome to Strong password generator")
 
 #Different lists
 letter = ['a', 'b', 'c','d','e', 'f','g','h','i','j','k']
-number = ['0', '1', '2', '3','4','5','6','7','8','9','10','11','12','13']
+number = ['0', '1', '2', '3','4','5','6','7','8','9']
 symbol = ['!', '@', '#', '$','%','^','&','*','(',')','-']
 
 #get the values for the variables
@@ -16,7 +16,7 @@ nr_symbol = int(input("How many symbol do you want"))
 
 #Create an empty list called password, this will be used to store the random elements from the lists(letter, number and symbol)
 password = []
-
+pw = ""
 #APPEND RANDOM ELEMENTS FROM THE LISTS ABOVE INTO A NEW LIST CALLED password
 #random.sample(listname_from_where_to_get_the_element,user_input_from_nr_letter), as a result this randomly selects asked number of values from the given list
 random_letter = random.sample(letter,nr_letter)
@@ -38,5 +38,5 @@ random.shuffle(password)
 #use the for loop to pick the element from list "password".
 for item in password:
     #print each element next to each other without spacing
-    print(item, end='')
-
+    pw += item
+print(f"Your password is: {pw}")

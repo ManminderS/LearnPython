@@ -16,7 +16,7 @@ print("You have 5 tries to guess the number correctly")
 
 
 #Computer randomly selects a number between 1 to 10
-random_num = random.randint(1,10)
+random_num = random.randint(1,101)
 #print(random_num)
 
 #Ask user to guess the number, atleast 5 tries

@@ -3,6 +3,8 @@
 #2. The user has to guess the number within a limited number of attempts.
 #3. The program should provide hints if the guess is too high or too low.
 
+#Guess the number chosen by the computer and ask user to guess it
+
 #import important modules
 import random
 
@@ -19,7 +21,8 @@ random_num = random.randint(1,10)
 
 #Ask user to guess the number, atleast 5 tries
 for n in range(1,6):
-    user_guess = int(input("Time to guess the number: "))
+    print(f"Try {n}")
+    user_guess = int(input("Guess the number: "))
     print(f" You selected {user_guess}")
     if user_guess > random_num:
         print("Oops! High")
@@ -28,3 +31,4 @@ for n in range(1,6):
     else:
     # congratulate user if the guess was correct
         print("Hoot! Hoot! You guessed it right")
+

@@ -17,7 +17,7 @@ for fruit in fruits:
 #Indentation is important, anything after for loop statement is part of for loop
 for fruit in fruits:
   print(fruit)  #part of for loop
-print(fruits)   #not a part of the loop as there is no indentation in front of it.
+print(fruit)   #not a part of the loop as there is no indentation in front of it.
 
 
 --------------------------------------------------------------------------------------------------------------------

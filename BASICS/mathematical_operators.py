@@ -32,3 +32,17 @@ Example:
 AND (&): 5 & 3 evaluates to 1.
 
 '''
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+A simple program to see the functioning of Relational/Comparison Operators
+# Define two numbers
+a = 10
+b = 20
+
+# Using comparison operators
+print("Is a equal to b?", a == b)         # False
+print("Is a not equal to b?", a != b)    # True
+print("Is a greater than b?", a > b)     # False
+print("Is a less than b?", a < b)        # True
+print("Is a greater than or equal to b?", a >= b)  # False
+print("Is a less than or equal to b?", a <= b)     # True

@@ -29,5 +29,4 @@ total = sum(even_list)
 if len(even_list) == 0:
     print("No even number to add the number")
 elif len(even_list) > 0:
-    total = sum(even_list)
     print(f"The sum of the even numbers in the list is: {total}")

@@ -1,3 +1,5 @@
+#this program is WIP and I will be attempted when I learn validation basics.
+
 #Write a program that:
 #1. Takes a number N as input.
 #2. Prints all the prime numbers between 1 and N.

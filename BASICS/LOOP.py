@@ -1,4 +1,10 @@
-#Loop is a way of repeating an action until a given condition is met
+#WHat is a loop? : In general it means things that have to happen over and over again or something we want to happen over and over again based on the condition. Also Loop is a way of repeating an action until a given condition is met
+
+#1. For Loop: 
+#Syntax: 
+for item in list_of_items:
+  Do Something
+
 #for example lets create a list of fruits and using for loop, to print each element of the list.
 
 #create a list called fruits

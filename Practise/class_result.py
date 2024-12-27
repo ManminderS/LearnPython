@@ -6,7 +6,7 @@ grades = input("Please enter the grades separated by space: ").split()
 #input test
 print(f"Output of input from the teacher is {grades}")
 
-#convert the values of the grades into int
+#convert the values of the grades into list of int values
 grades = [int(grade) for grade in grades]
 
 #Pass the Values in pass list if for every student who scored more than 50 marks, else marks goes to fail list
@@ -20,14 +20,18 @@ for grade in grades:
         fail_list.append(grade)
 
 print(f"Pass List: {pass_list}")
-print(f"Pass List: {fail_list}")
+print(f"Fail List: {fail_list}")
 
-#Decide if most of the students passed or failed and generate a message for students
+#Percentage each student represent in the class
 total_students = len(grades)
-print(total_students)
-
-#how much Percentage each student represents?
-percentage_per_student = (total_students/100)*100
-print(f"each student represents {percentage_per_student}%")
+percentage_per_student = round(100/total_students, 1)
+print(f"each student represents: {percentage_per_student}%")
 
 #How may percentage of people passed and failed
+total_students_passed = len(pass_list)*percentage_per_student
+total_students_failed = len(fail_list)*percentage_per_student
+
+if total_students_passed > total_students_failed:
+    print(f"Good Job Class, {total_students_passed}% students passed")
+else:
+    print("Work Harder Class")

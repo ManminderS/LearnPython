@@ -1,5 +1,20 @@
 #WHat is a loop? : In general it means things that have to happen over and over again or something we want to happen over and over again based on the condition. Also Loop is a way of repeating an action until a given condition is met
+loop type 1: for item in list_of_items:
+  do something to each item
 
+loop type 2: for number in range(a,b):
+  print(number)
+
+loop type 3: While loop
+while something_is_true:
+  #do something repeatedly
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
 #1. For Loop: 
 #Syntax: 
 for item in list_of_items:

@@ -1,7 +1,7 @@
 #import modules
 import sys
 
-#list containing costs
+#list containing costs and other infos
 cost_list = [12.99, 6.99, 4.99, 10.99]
 menu_items = ["Spaghetti", "Salad", "Cheesecake", "Pizza"]
 customer_billing_list = []

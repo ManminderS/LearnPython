@@ -33,7 +33,7 @@ elif choice == 1 or 2:
     for value in int_order:
         print(menu_items[value-1])
 
-#Confirming from the customer id he is happy with the order
+#Confirming if the customer is happy with the order:
     order_confirm = input("\nDo you want to confirm the order? y/n: ").lower()
     if order_confirm == 'n' or 'no':
         final_call = input("We understand sometimes you wanna take time to order right, Do you wanna revisit the menu??? y/n: ")

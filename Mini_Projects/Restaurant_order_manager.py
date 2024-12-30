@@ -1,7 +1,7 @@
 #import modules
 import sys
 
-#list containing costs and other infos
+#list containing costs
 cost_list = [12.99, 6.99, 4.99, 10.99]
 menu_items = ["Spaghetti", "Salad", "Cheesecake", "Pizza"]
 customer_billing_list = []
@@ -34,12 +34,8 @@ elif choice == 1 or 2:
         print(menu_items[value-1])
 
 #Confirming from the customer id he is happy with the order
-    order_confirm = input("\nDo you want to confirm the order? y/n: ")
-    if order_confirm == "y" or "Y" or "YES" or "yes":
-        print("Your total is $$")
-    else:
-
-#if not happy and want to restart or exit the program
+    order_confirm = input("\nDo you want to confirm the order? y/n: ").lower()
+    if order_confirm == 'n' or 'no':
         final_call = input("We understand sometimes you wanna take time to order right, Do you wanna revisit the menu??? y/n: ")
         if final_call == "n" or "No" or "NO" or "no":
             sys.exit()
@@ -47,8 +43,9 @@ elif choice == 1 or 2:
             sys.exit()
             # print("Restarting the Order Manager app.....")
             # ("call function to restart the program here")
-        
-        
+    else:
+        print("Your total is $$")
+   
     
 else:
     print("You haven't selected any option to go further")

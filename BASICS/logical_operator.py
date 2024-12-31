@@ -6,7 +6,7 @@
 #types of operators
 #AND
 #OR
-#not
+#NOT
 
 ------------------------------------------------
 Truth Tables(AND)
@@ -16,25 +16,27 @@ True	       False	   ->False
 False	       True      ->False
 False	       False	   ->False
 
-or Truth Table
-Operand 1	Operand 2	Result (Operand1 or Operand2)
-True	True	True
-True	False	True
-False	True	True
-False	False	False
-not Truth Table
-Operand	Result (not Operand)
-True	False
-False	True
+Truth Tables(OR)
+Operand 1	  Operand 2	   Result 
+True	      True	      ->True
+True	      False	      ->True
+False	      True	      ->True
+False	      False	      ->False
+
+Truth Tables(NOT)
+Operand	   Result 
+True	    ->False
+False	    ->True
 
 ...............................................
 #HOW TO USE THE OPERATORS?
 
-Condition_1 OR Condition_2 = either true or false
-
-#example 1: AND
-
 a = 3
 b = 5
 
-if a>1 and a<4
+if a>1 and a<4:
+  print("Something")
+
+
+#the program above will print 'Something' as a result because the condition evaluated to true because condition 1 and condition both are true
+#and as per truth table under AND: TRUE AND TRUE = TRUE, hence the conditionm is met "Something" is printed.

@@ -19,7 +19,7 @@ if choice == 3:
     sys.exit()
     
 #when user choose 1 or 2
-elif choice == 1 or 2:
+elif choice == 1 or choice == 2:
     print(".....Below are the menu items..... \n1. Spaghetti - $12.99 (Main Course) \n2. Salad - $6.99 (Starter) "
           "\n3. Cheesecake - $4.99 (Dessert) \n4. Pizza - $10.99 (Main Course)")
     order = input("\nWhat would you like to order? type numeric values as appears in front of menu item separated by space (example: 1 for Spaghetti): ").split()
@@ -35,9 +35,9 @@ elif choice == 1 or 2:
 
 #Confirming if the customer is happy with the order:
     order_confirm = input("\nDo you want to confirm the order? y/n: ").lower()
-    if order_confirm == 'n' or 'no':
-        final_call = input("We understand sometimes you wanna take time to order right, Do you wanna revisit the menu??? y/n: ")
-        if final_call == "n" or "No" or "NO" or "no":
+    if order_confirm == 'n' or order_confirm == 'no':
+        final_call = input("We understand sometimes you wanna take time to order right, Do you wanna revisit the menu??? y/n: ").lower()
+        if final_call == "n" or final_call == "no":
             sys.exit()
         else:
             sys.exit()
@@ -45,8 +45,9 @@ elif choice == 1 or 2:
             # ("call function to restart the program here")
     else:
         print("Your total is $$")
-   
-    
+
+elif choice >= 4:
+    print("Invalid request: please enter the right option")
+
 else:
     print("You haven't selected any option to go further")
-    

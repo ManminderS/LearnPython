@@ -40,3 +40,15 @@ if a>1 and a<4:
 
 #the program above will print 'Something' as a result because the condition evaluated to true because condition 1 and condition both are true
 #and as per truth table under AND: TRUE AND TRUE = TRUE, hence the conditionm is met "Something" is printed.
+
+
+#If I do
+
+a = 3
+b = 5
+
+if a>1 and <4:
+  print("Something")
+
+# this will make the condition go false as condition 1 true but condition 2: <4 is not comparing the value for if a<4 
+# and is considered false and hence true and false becomes false.

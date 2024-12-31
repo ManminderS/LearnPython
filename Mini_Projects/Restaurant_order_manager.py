@@ -5,6 +5,7 @@ import sys
 cost_list = [12.99, 6.99, 4.99, 10.99]
 menu_items = ["Spaghetti", "Salad", "Cheesecake", "Pizza"]
 customer_billing_list = []
+total_cost = []
 
 #Welcome message
 print("\n..........Welcome to the order management..........\n")
@@ -31,7 +32,12 @@ elif choice == 1 or choice == 2:
 #for-loop to iterate through each value in the int_order list and display the value against it from menu_items list and print the values to 
 #show the customer what he is ordering
     for value in int_order:
+#store the food choices in a list customer_billing_list
+        customer_billing_list.append(menu_items[value-1])
         print(menu_items[value-1])
+#compare the customer_billing_list with list menu_items and findout the position and then using the position in cost_list and then ammend the cost in new list called total_cost.
+
+                
 
 #Confirming if the customer is happy with the order:
     order_confirm = input("\nDo you want to confirm the order? y/n: ").lower()
@@ -44,10 +50,13 @@ elif choice == 1 or choice == 2:
             # print("Restarting the Order Manager app.....")
             # ("call function to restart the program here")
     else:
-        print("Your total is $$")
+        for item in customer_billing_list:
+            if item in menu_items:
+                index = menu_items.index(item)
+                total_cost.append(cost_list[index])
+                total = sum(total_cost)
+                
+        print(f"Your total is ${total}")
 
 elif choice >= 4:
     print("Invalid request: please enter the right option")
-
-else:
-    print("You haven't selected any option to go further")

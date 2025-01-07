@@ -1,6 +1,35 @@
+# Q 1: When to use the for loop and 
+# When you have to iterate over something and with iteration you have to do something
+
+# For example: for a list of fruits
+fruits = [Apple, Orange, Guava]
+#in order to do something with each iteration like priting the fruit we need to use the for loop, this cant be done easily using thw while loop.
+for fruit in fruits:
+  print(fruit)
+
+# Q 2: When to use the while loop?
+# use a while loop when you don't really care what number in a sequence you're in, which item you're iterating through in a list and you just simply want to carry out some sort of functionality many,
+# many times until some sort of condition that you set. And this is also a good point to mention that while loops are a little bit more dangerous than for loops because in for loops, you're setting ahead of time
+# how many times something is going to run. It's going to stop once it reaches the end of the list of items in this case, and it's going to stop once it reaches the upper bound of the range in this case. 
+
+# But for while loops, they will continue running until this particular condition switches to false. So if you have some sort of condition that actually never becomes false, well
+# then your while loop becomes something known as an infinite loop. Because let's say that our while loop tested while five is greater than three, then carry out these three lines of code. Well,
+# five is always going to be larger than three until the end of time.
+
+# And so that means your code is also going to run until the end of time, which is probably not what you want in most cases. If instead of saying, while not at_goal, I said, while five is greater than three,
+# then you're going to see this robot perform this jump until eternity. And it's basically going to stop only once it's crashed and timed out.
+
+# Now every single program at some point in their lives will create an infinite loop. Don't worry about it. Just quit the program, restart and try to prevent this from happening in the future.
+
+# And very often I find that it's really helpful when you don't know why you're getting an infinite loop to simply just print out your condition. So in this case, if I printed out five greater than three,
+# then it's always going to print true. And it's never going to become false basically. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 #WHat is a loop? : In general it means things that have to happen over and over again or something we want to happen over and over again based on the condition. Also Loop is a way of repeating an action until a given condition is met
-loop type 1: for item in list_of_items:
-  do something to each item
+#loop type 1: 
+for item in list_of_items:
+do something to each item
 
 loop type 2: for number in range(a,b):
   print(number)

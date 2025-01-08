@@ -68,3 +68,21 @@ def jump_hurdle():
 
 while at_goal() != True:
     jump_hurdle()
+
+
+
+-------------------------------------------------------------------
+Hurdle 3: WIP
+
+def jump():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    
+while at_goal() == False:
+     while wall_in_front() == True:
+            jump()
+            while front_is_clear() == True:
+                move()

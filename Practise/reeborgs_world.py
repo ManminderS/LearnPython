@@ -72,17 +72,29 @@ while at_goal() != True:
 
 
 -------------------------------------------------------------------
-Hurdle 3: WIP
+Hurdle 3: each time the flag is placed at random position and using if, while loop, move(), turn_left(), front_is_clear(), wall_in_front(), at_goal(), and their negation.
 
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
 def jump():
     turn_left()
     move()
     turn_right()
     move()
     turn_right()
+    move()
+    turn_left()
     
 while at_goal() == False:
-     while wall_in_front() == True:
-            jump()
-            while front_is_clear() == True:
-                move()
+    if wall_in_front():
+        jump()
+    else:
+        move()
+       
+    
+    
+

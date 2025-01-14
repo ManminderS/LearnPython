@@ -95,6 +95,24 @@ while at_goal() == False:
     else:
         move()
        
+--------------------------------------------------------------------------
+HUrdle 4:
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
+    if wall_in_front():
+        turn_left()
+    if wall_on_right():
+        move()
+    if not wall_on_right():
+        turn_right()
+        move()
     
+while at_goal() == False:
+    jump()
     
 

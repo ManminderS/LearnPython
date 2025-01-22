@@ -127,12 +127,21 @@ while at_goal() == False:
     
 -------------------------------------------------------------------------------
 Alternative Solution to Hurdle 4:
-def jump()
-
-
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def jump():
+    turn_left()
+    while wall_on_right()
+    move()
+         
 while at_goal() == False:
     if wall_in_front():
         jump()
+    else:
+        move()
 
 
     

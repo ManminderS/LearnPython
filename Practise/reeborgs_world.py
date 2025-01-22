@@ -157,11 +157,20 @@ def turn_right():
     turn_left()
     
 def get_out():
-    turn_left()
-    
-while at_goal() == False:
     if wall_in_front():
-        get_out()
+        turn_left()
+    elif front_is_clear():
+        move()
+    elif ot wall_in_front() and wall_on_right():
+        turn_left()
+        turn_left()
+    elif wall_in_front() and not wall_on_right():
+        turn_right()
+    elif wall_in_front() and wall_on_right():
+        turn_right()
     else:
         move()
-
+    
+       
+while at_goal() == False:
+    get_out()

@@ -125,8 +125,14 @@ while at_goal() == False:
     jump()
     
     
+-------------------------------------------------------------------------------
+Alternative Solution to Hurdle 4:
+def jump()
 
-    
+
+while at_goal() == False:
+    if wall_in_front():
+        jump()
 
 
     

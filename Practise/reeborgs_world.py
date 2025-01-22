@@ -139,7 +139,10 @@ def jump():
     turn_right()
     move()
     turn_right()
-         
+    while front_is_clear():
+        move()
+    turn_left()    
+      
 while at_goal() == False:
     if wall_in_front():
         jump()

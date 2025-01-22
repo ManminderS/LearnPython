@@ -149,6 +149,19 @@ while at_goal() == False:
     else:
         move()
 
-
+--------------------------------------
+Reeborg: Maze Challenge
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
     
+def get_out():
+    turn_left()
+    
+while at_goal() == False:
+    if wall_in_front():
+        get_out()
+    else:
+        move()
 

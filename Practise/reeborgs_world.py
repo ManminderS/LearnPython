@@ -96,7 +96,7 @@ while at_goal() == False:
         move()
        
 --------------------------------------------------------------------------
-HUrdle 4:
+HUrdle 4: Solution 1
 
 def turn_right():
     turn_left()

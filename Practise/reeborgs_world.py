@@ -150,7 +150,7 @@ while at_goal() == False:
         move()
 
 --------------------------------------
-Reeborg: Maze Challenge
+Reeborg: Maze Challenge(As per solution given in the video)
 def turn_right():
     turn_left()
     turn_left()
@@ -164,3 +164,20 @@ while not at_goal():
         move()
     else:
         turn_left()
+---------------------------------------
+Reeborg: My Solution
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+           
+while not at_goal():
+    if front_is_clear():
+        move()
+    elif right_is_clear():
+        turn_right()
+    elif not front_is_clear():
+        turn_left()
+    elif front_is_clear() and right_is_clear():
+        turn_right()

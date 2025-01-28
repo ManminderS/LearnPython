@@ -1,11 +1,21 @@
-#starting
-print("Welcome to hangman")
+#importing modules
+import random
 
-#words
-word = ["batman", "superman", "Shaktimaan"]
+#wordlists
+word_list = ["aardvark", "baboon", "camel"]
 
-#display random word
-random_word = random.choice(word)
+# TODO-1 Randomly choose a word from the word_list and assign it to a variable called chosen_word. Then print it.
+chosen_word = random.choice(word_list)
+print(f"The chosen word is: {chosen_word}")
 
-#print random word
-print(random_word)
+
+# TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
+guess = input("Please enter a letter to guess: ").lower()
+
+
+# TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word. Print "Right" if it
+#  is, "Wrong" if it's not.
+if guess in chosen_word:
+    print("Right")
+else:
+    print("Wrong")

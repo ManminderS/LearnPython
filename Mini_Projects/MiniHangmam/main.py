@@ -9,7 +9,10 @@ chosen_word = random.choice(word_list)
 print(f"The chosen word is: {chosen_word}")
 
 #placeholder
-placeholders = print(len(chosen_word)*"_ ")
+placeholders = len(chosen_word)*"_ "
+placeholders = [placeholders]
+print(placeholders)
+print(len(placeholders))
 
 
 # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
@@ -23,3 +26,5 @@ for letter in chosen_word:
         print("right")
     else:
         print("Wrong")
+        
+#put the the right guessed letter into the place holder

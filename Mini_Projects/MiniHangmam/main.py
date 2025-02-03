@@ -1,39 +1,35 @@
 ----------------This is fixed version--------------------------------
-
-#importing modules
+#import modules
 import random
 
-#wordlists
-word_list = ["batman", "Superman", "Avengers", "Hulk", "Transformers"]
+#wordlist
+word_list = ["aardvark", "baboon", "camel"]
 
-# TODO-1 Randomly choose a word from the word_list and assign it to a variable called chosen_word. Then print it.
 chosen_word = random.choice(word_list)
+print(chosen_word)
 length = len(chosen_word)
 
-#Make placeholders for the chosen word
-#create a empty list "spaces" & Insert the _ that is equal to lenght of the chosen word
-spaces = []
+# TODO-1: Create a "placeholder" with the same number of blanks as the chosen_word
+placeholder = ""
 for element in range(length):
-    spaces.append("_")
-
-
-#join the elements of the list and display it
-the_word = " ".join(spaces)
-print(the_word)
-
-#Ask user to guess the letter:
-guess = input("Guess the letter: ")
-
+    placeholder += '_'
 
 #join the elements of the list and display it
-the_word = " ".join(spaces)
-print(the_word)
+# the_word = " ".join(spaces)
+print(placeholder)
+guess = input("Guess a letter: ").lower()
 
-#when user choose a word, if it matches any alphabet in the word, replace it with the guessed word
-if guess in chosen_word:
-    print("R")
-else:
-    print("W")
+
+
+# TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
+
+for letter in chosen_word:
+    if letter == guess:
+        print("Right")
+    else:
+        print("Wrong")
+
+
 
 
 -----------------------------------------this is previous code----------------------------------------------------------------------

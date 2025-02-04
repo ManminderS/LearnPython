@@ -39,12 +39,11 @@ print(display)
 
 
 -----------------------------------------this is alternative correct code----------------------------------------------------------------------
-
 #import modules
 import random
 
 #wordlist
-words = ['batman', 'shaktimaan', 'transformers']
+words = ['batman', 'x-men', 'hulk']
 
 #randomly choose a word
 chosen_word = random.choice(words)
@@ -61,7 +60,10 @@ while "_" in placeholder:
     for i in range(len(chosen_word)):
         if chosen_word[i] == guess:
             placeholder[i] = guess
-    print(''.join(placeholder))
+    print(' '.join(placeholder))
+
+print(f"Congratulations! You guessed the word: {chosen_word}")
+#improve the upper for loop to keep recording evey guessed word
 
 
 

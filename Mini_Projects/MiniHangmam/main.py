@@ -23,6 +23,10 @@ guess = input("Guess a letter: ").lower()
 
 # TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
 display = ""
+
+while display != chosen_word:
+    guess = input("Guess a letter: ").lower()
+    
 for element in chosen_word:
     if element == guess:
         display += element
